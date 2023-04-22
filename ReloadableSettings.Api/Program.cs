@@ -24,6 +24,7 @@ builder.Services.AddControllers();
 builder.Services.AddAzureAppConfiguration();
 
 builder.Services.ConfigureSettings(builder.Configuration);
+builder.Services.ConfigureDependencyInjection();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
